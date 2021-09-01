@@ -10,11 +10,10 @@ def main():
 
     # タイトルを表示
     st.markdown('# 土木鋼構造診断士・診断士補の択一問題　過去問をひたすら解く💪（試作版）')
-    st.markdown('#### 👈サイドバーから解きたい過去問の年度を選択できます。')
 
     # 県別のセレクトボックスを作成する
     year_list = df['年度'].unique()
-    selected_year = st.sidebar.multiselect(
+    selected_year = st.multiselect(
         '◇解きたい過去問の年度を選択（複数選択可）：',
         year_list
     )

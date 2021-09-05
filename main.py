@@ -5,7 +5,7 @@ from PIL import Image
 
 def main():
 
-    # Excel空過去問を読み込みしデータフレームに格納
+    # Excelから過去問を読み込みしデータフレームに格納
     df = pd.read_excel("test.xlsx")
 
     # タイトルを表示
